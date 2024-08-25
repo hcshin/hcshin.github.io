@@ -1,0 +1,29 @@
+---
+layout: post
+title: "Equations Test Page"
+date: 2024-08-25 17:01:00 +0900
+categories: test
+---
+# Inline Equation
+An inline euqation: $ y = x^2 $.
+
+# Display Equation
+A display equation
+
+$$ y = x^2 $$
+
+# Display Equation with Numbering and Referencing
+A display equation with numbering. This block needs to be surrounded by &lt;p&gt; and &lt;/p&gt;.
+
+<p>
+\begin{equation}
+\label{eq:square}
+\begin{split}
+   (x+1)^2 &= (x+1)(x+1)\\
+           &= x^2 + 2x + 1
+\end{split}
+\end{equation}
+</p>
+
+Link to equation \eqref{eq:square}
+
