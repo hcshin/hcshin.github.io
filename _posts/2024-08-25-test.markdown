@@ -4,6 +4,8 @@ title: "Equations Test Page"
 date: 2024-08-25 17:01:00 +0900
 categories: test
 ---
+Testing insertion of various math expressions in Jekyll and MathJax.
+
 # Inline Equation
 An inline euqation: $ y = x^2 $.
 
@@ -13,9 +15,8 @@ A display equation
 $$ y = x^2 $$
 
 # Display Equation with Numbering and Referencing
-A display equation with numbering. This block needs to be surrounded by &lt;p&gt; and &lt;/p&gt;.
+A display equation with numbering.
 
-<p>
 \begin{equation}
 \label{eq:square}
 \begin{split}
@@ -23,7 +24,6 @@ A display equation with numbering. This block needs to be surrounded by &lt;p&gt
            &= x^2 + 2x + 1
 \end{split}
 \end{equation}
-</p>
 
 Link to equation \eqref{eq:square}
 
