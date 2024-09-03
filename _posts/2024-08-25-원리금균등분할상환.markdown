@@ -63,7 +63,7 @@ x &= Mr + m_1\\
 \begin{equation}
 \begin{split}
 \left(M - \sum_{i=1}^{k-1} m_i\right)r + m_k &= \left(M - \sum_{i=1}^{k-2} m_i\right)r + m_{k-1}\\
-\cancel{Mr} - r\left(\cancel{\sum_{i=1}^{k-2}} m_i + m_{k-1}\right) + m_k &= \cancel{Mr} -\cancel{r\sum_{i=1}^{k-2} m_i} + m_{k-1}\\
+\cancel{Mr} - r\left(\cancel{\sum_{i=1}^{k-2} m_i} + m_{k-1}\right) + m_k &= \cancel{Mr} -r\cancel{\sum_{i=1}^{k-2} m_i} + m_{k-1}\\
 m_k &= (1 + r)m_{k-1}
 \end{split}
 \label{payment-recurrent-relation}
