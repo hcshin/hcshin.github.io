@@ -2,7 +2,6 @@
 layout: post
 title: "원리금균등분할상환 계산식 유도"
 date: 2024-08-25 18:19:00 +0900
-categories: math
 tags: finance math
 ---
 
