@@ -7,7 +7,7 @@ categories: test
 Testing insertion of various math expressions in Jekyll and MathJax.
 
 # Inline Equation
-An inline euqation: $ y = x^2 $.
+An inline euqation: \\(y = x^2\\).
 
 # Display Equation
 A display equation
