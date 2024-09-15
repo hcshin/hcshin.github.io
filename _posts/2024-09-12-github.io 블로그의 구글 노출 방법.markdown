@@ -1,0 +1,16 @@
+---
+layout: post
+title: "github.io 블로그의 구글 노출 방법"
+date: 2024-09-12 10:20:47 +09:00
+tags: 
+---
+
+참고: https://stackoverflow.com/a/49073325
+
+1. https://search.google.com/search-console 으로 이동
+1. 좌상단 세줄메뉴 > 드랍다운 > 속성 추가
+1. 도메인(신규), URL 접두어 중 URL 접두어 선택 후 URL 입력
+1. 여러 확인 방법 중 권장 확인 방법인 HTML 다운로드
+1. 다운로드 받은 google*.html을 *.gihub.io 레포지토리의 최상단에 위치
+1. commit 후 푸시. 1~2분 정도 기다린 후에 search console로 돌아가서 확인 버튼 클릭
+1. 소유권 확인 완료
