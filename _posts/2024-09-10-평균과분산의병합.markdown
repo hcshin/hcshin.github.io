@@ -54,6 +54,15 @@ V_n &= \sum_{i=1}^n (x_i - \mu_n)^2\\
 \end{split}
 \end{equation}
 </p>
+<p>
+\begin{equation}
+\label{incremental-stdev}
+\begin{split}
+\sigma_n &= \sqrt{V_n} = \sqrt{\frac{1}{n}\left[\left(n-1\right)s_{n-1} + x_n^2\right] - \left\{\frac{1}{n}\left[\left(n-1\right)\mu_{n-1} + x_n\right]\right\}^2}
+\end{split}
+\end{equation}
+</p>
+
 
 ## 서로 다른 크기를 갖는 두 집단의 평균과 분산의 병합
 다음으로, 본 포스팅의 본론인 서로 다른 크기를 갖는 두 집단의 평균과 분산의 병합을 살펴보자. 기호의 정의는 incremental mean & variance의 것을 그대로 사용하되 두 집단의 mean과 squared mean을 괄호 안 숫자를 이용하여 다음과 같이 정의한다.
@@ -62,7 +71,7 @@ V_n &= \sum_{i=1}^n (x_i - \mu_n)^2\\
 * \\(\mu^{(1)} = \frac{\sum_{i=1}^{N} x_i}{N}\\). 첫 \\(N\\)개 샘플의 평균.
 * \\(s^{(1)} = \frac{\sum_{i=1}^{N} x_i^2}{N}\\). 첫 \\(N\\)개 샘플의 제곱의 평균.
 * \\(\mu^{(2)} = \frac{\sum_{i=N+1}^{N+M} x_i}{N}\\). 이후\\(M\\) 개 샘플의 평균.
-* \\(s^{(1)} = \frac{\sum_{i=N+1}^{N+M} x_i^2}{N}\\). 이후 \\(M\\)개 샘플의 제곱의 평균.
+* \\(s^{(2)} = \frac{\sum_{i=N+1}^{N+M} x_i^2}{N}\\). 이후 \\(M\\)개 샘플의 제곱의 평균.
 * \\(\mu = \frac{\sum_{i=1}^{N+M} x_i}{N+M}\\). 병합된 평균.
 * \\(s = \frac{\sum_{i=1}^{N+M} x_i^2}{N+M}\\). 병합된 제곱의 평균.
 * \\(V = \frac{\sum_{i=1}^{N+M} (x_i - \mu)^2}{N+M}\\). 병합된 분산.

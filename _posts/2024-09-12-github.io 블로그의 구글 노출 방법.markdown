@@ -2,15 +2,24 @@
 layout: post
 title: "github.io 블로그의 구글 노출 방법"
 date: 2024-09-12 10:20:47 +09:00
-tags: 
+tags: web githubio
 ---
 
-참고: https://stackoverflow.com/a/49073325
+github.io에 블로그를 개설 하였는데 구글에서 꽤 표적 검색(e.g., Hocheol Shin's Blog site:github.io)을 하였는데도, 검색결과에 표출이 되지 않았다. 구글에서 계속 새로 생긴 사이트들에 대해서 색인 작업을 하지만 워낙 시간이 얼마 되지 않았기 때문인 것으로 보인다. Google Search Console에 사이트를 등록하여 구글 색인을 가속화할 수 있는 방법을 소개한다.
 
+## Google Search Console에 github.io 사이트 등록하기
 1. https://search.google.com/search-console 으로 이동
 1. 좌상단 세줄메뉴 > 드랍다운 > 속성 추가
+![Add Property](/assets/images/2024-09-12-github.io 블로그의 구글 노출 방법/addproperty.png)
 1. 도메인(신규), URL 접두어 중 URL 접두어 선택 후 URL 입력
+![Use URL Prefix](/assets/images/2024-09-12-github.io 블로그의 구글 노출 방법/use_url_prefix.png)
 1. 여러 확인 방법 중 권장 확인 방법인 HTML 다운로드
+![Download HTML](/assets/images/2024-09-12-github.io 블로그의 구글 노출 방법/download_html.png)
 1. 다운로드 받은 google*.html을 *.gihub.io 레포지토리의 최상단에 위치
 1. commit 후 푸시. 1~2분 정도 기다린 후에 search console로 돌아가서 확인 버튼 클릭
+![Press Check](/assets/images/2024-09-12-github.io 블로그의 구글 노출 방법/press_check.png)
 1. 소유권 확인 완료
+![Ownership Confirmed](/assets/images/2024-09-12-github.io 블로그의 구글 노출 방법/ownership_confirmed.png)
+
+## 참고
+* https://stackoverflow.com/a/49073325
