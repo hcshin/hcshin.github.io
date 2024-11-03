@@ -11,3 +11,6 @@ vendor/
 # Ignore python venv
 venv/
 __*__/
+
+# Ingnore ctgas
+tags

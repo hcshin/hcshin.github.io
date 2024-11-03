@@ -1,0 +1,24 @@
+---
+layout: post
+title: "How to cope with Python requests ConnectionResetError(54, \'Connection reset by peer\')"
+date: 2024-11-03 10:06:23 +09:00
+tags: Programming Python requests
+---
+
+# Situation
+I was trying to run a Python project using requests for REST API interfacing. However whenever I try to run the script I got: 
+
+```
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))
+```
+
+I rechecked the API guide webpage to see if there's a change with the URL. I also checked my token for the expiration. None of them has any problems.
+
+# Solution
+I searched it within Perplextity and among the answers there was the root cause of my problem. There was a CA certificate change for the API server's side. The solution was to upgrade `certifi` pip package.
+
+```
+$ python3 -m pip install -U certifi
+```
+
+After this the `ConnectionResetError(54)` was gone
