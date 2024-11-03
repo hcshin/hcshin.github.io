@@ -2,7 +2,7 @@
 layout: post
 title: How to cope with Python requests ConnectionResetError(54, 'Connection reset by peer')
 date: 2024-11-03 10:06:23 +09:00
-tags: Programming Python requests
+tags: programming python requests
 ---
 How I coped with a ConnectionResetError(54) from Python requests library when using a script after a long period of time.
 
@@ -22,4 +22,4 @@ I searched it within Perplextity and among the answers there was the root cause 
 $ python3 -m pip install -U certifi
 ```
 
-After this the `ConnectionResetError(54)` was gone
+After this the `ConnectionResetError(54)` was gone.
