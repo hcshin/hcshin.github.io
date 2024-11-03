@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "How to cope with Python requests ConnectionResetError(54, \'Connection reset by peer\')"
+title: How to cope with Python requests ConnectionResetError(54, 'Connection reset by peer')
 date: 2024-11-03 10:06:23 +09:00
 tags: Programming Python requests
 ---
+How I coped with a ConnectionResetError(54) from Python requests library when using a script after a long period of time.
 
 # Situation
 I was trying to run a Python project using requests for REST API interfacing. However whenever I try to run the script I got: 
